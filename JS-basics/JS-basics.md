@@ -4,16 +4,17 @@
   ```console.log("Hello!");```
 
 #### 4 primitive data types:
-  1. Strings (any grouping of keyword characters, with quotes '' or double quotes "")
-  2. Numbers (any numbers, including decimals)
-  3. Booleans (true or false)
-  4. Nulls (only null, it represents absence of a value
+  1. **Strings** (any grouping of keyword characters, with quotes '' or double quotes "")
+  2. **Numbers** (any numbers, including decimals)
+  3. **Booleans** (true or false)
+  4. **Nulls** (only null, it represents absence of a value
+  5. **Undefined** (JS assigns the undefined data type to variables that are not assigned a value.)
 
 #### Math operators:
-  Add: +
-  Subtract: -
-  Multiply: *
-  Divide: /
+  1. Add: +
+  2. Subtract: -
+  3. Multiply: *
+  4. Divide: /
 
 #### Properties
 When I introduce a new piece of data into a JavaScript program, the browser saves it as an instance of the data type.
@@ -35,3 +36,9 @@ An instance is an individual case (or object) of a data type.
 
 
 Instance methods require an instance before you use them.
+
+#### Variables
+Variables allow us to assign data to a word and use the word to reference the data
+##### 2 ways to declare variables:
+  1. **let** (can be reassigned)
+  2. **const** (*constant variable*), creates a new variable with value that cannot change
