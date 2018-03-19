@@ -31,8 +31,8 @@ An instance is an individual case (or object) of a data type.
   Length of a string is calculated when an instance is created, but string instance also has methods that calculate new information as needed.
   Built-in methods are called on an instance, they perform actions that generate an output.
 
-[JS introduction in Polish:] (https://developer.mozilla.org/pl/docs/Web/JavaScript/Wprowadzenie_do_programowania_obiektowego_w_jezyku_JavaScript)
-[JS methods in English:] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype)
+[JS introduction in Polish - link](https://developer.mozilla.org/pl/docs/Web/JavaScript/Wprowadzenie_do_programowania_obiektowego_w_jezyku_JavaScript)<br>
+[JS methods in English - link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype)
 
 
 Instance methods require an instance before you use them.
