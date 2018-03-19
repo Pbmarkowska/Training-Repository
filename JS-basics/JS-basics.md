@@ -16,7 +16,7 @@
   3. Multiply: *
   4. Divide: /
 
-#### Properties
+#### Properties:
 When I introduce a new piece of data into a JavaScript program, the browser saves it as an instance of the data type.
 An instance is an individual case (or object) of a data type.
 
@@ -27,7 +27,7 @@ An instance is an individual case (or object) of a data type.
   Example: .length property shows the number of characters in a string
   Example: ```console.log('Word'.length)``` -> the output is 4
 
-#### Bult-in methods
+#### Bult-in methods:
   Length of a string is calculated when an instance is created, but string instance also has methods that calculate new information as needed.
   Built-in methods are called on an instance, they perform actions that generate an output.
 
@@ -37,7 +37,7 @@ An instance is an individual case (or object) of a data type.
 
 Instance methods require an instance before you use them.
 
-#### Variables
+#### Variables:
 Variables allow us to assign data to a word and use the word to reference the data
 ##### 2 ways to declare variables:
   1. **let** (can be reassigned)
