@@ -67,7 +67,7 @@ The **cat** command outputs the contents of a file to the terminal.<br>
 
 In this case, sed searches forests.txt for the word "snow" and replaces it with "rain." Importantly, the above command will only replace the first instance of "snow" on a line.
 
-### Environment settings ### <br>
+### Environment settings<br>
 **~/.bash_profile*** is the name of file used to store environment settings. It is commonly called the "bash profile". When a session starts, it will load the contents of the bash profile before executing commands.
 
 The ~ represents the user's home directory.<br>
@@ -76,7 +76,7 @@ The name ~/.bash_profile is important, since this is how the command line recogn
 
 The command source **~/.bash_profile** activates the changes in ~/.bash_profile for the current session.
 
-### Aliases ### <br>
+### Aliases<br>
 What happens when you store this alias in ~/.bash_profile? <br>
 ```alias pd="pwd"```<br>
 
