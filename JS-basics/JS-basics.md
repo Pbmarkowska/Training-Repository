@@ -42,3 +42,30 @@ Variables allow us to assign data to a word and use the word to reference the da
 ##### 2 ways to declare variables:
   1. **let** (can be reassigned)
   2. **const** (*constant variable*), creates a new variable with value that cannot change
+
+### Mathematical Assignement Operators
+**+=, -=, *=** - perform mathematical operation of the first operator<br>
+**++, --** - increment and decrement operators, increasing or decreasing a number of variable by one, respectively.
+
+### String interpolation <br>
+let myPet = 'armadillo'; <br>
+console.log('I own a pet ' + myPet + '.');<br>
+// Output: 'I own a pet armadillo.'
+
+## String interpolation II
+used in JS (ES6)
+
+let myPet = 'dog'; <br>
+console.log(`I own a pet ${myPet}.`); <br>
+let myName = 'Patka'; <br>
+let myCity = 'Poznan'; <br>
+console.log(`My name is ${myName}. My favorite city is ${myCity}.`); <br>
+
+### Variables review
+ - Variables hold reusable data in a program.
+ - JavaScript will throw an error if you try to reassign const variables.
+ - You can reassign variables that you create with the let keyword.
+ - Unset variables store the primitive data type undefined.
+ - Mathematical assignment operators make it easy to calculate a new value and assign it to the same variable.
+ - The + operator is used to interpolate (combine) multiple strings.
+ - In JavaScript ES6, backticks (`) and ${} are used to interpolate values into a string.
