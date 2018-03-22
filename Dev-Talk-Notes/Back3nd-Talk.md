@@ -18,7 +18,7 @@ Constructing a retry mechanism for non-idempotent requests requires cooperation 
 [source: _Idempotency, APIs, and Retries — Oh My!_ by Roger Jin ](https://hackernoon.com/idempotency-apis-and-retries-34b161f64cb4)
 
 | HTTP Method   | Idempotent? | Safe? |
-| -|::| :|
+| ---|---|---|
 |OPTIONS | yes | yes|
 |GET  | yes | yes|
 |HEAD | yes| yes|
