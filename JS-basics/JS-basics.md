@@ -47,6 +47,20 @@ Variables allow us to assign data to a word and use the word to reference the da
 **+=, -=, *=** - perform mathematical operation of the first operator<br>
 **++, --** - increment and decrement operators, increasing or decreasing a number of variable by one, respectively.
 
+### Methods
+`.toUpperCase()`<br>
+`.startsWith()` <br>
+
+`console.log('Hello'.toUpperCase());` // 'HELLO'
+`console.log('Hey'.startsWith('H'));` // true
+
+`Math.random()`: returns random number between 0 and 1<br>
+`Math.random() * 50`: returns random number between 0 and 50<br>
+`Math.Floor()`: takes the decimal number and rounds down to the nearest whole number<br>
+`Math.ceil()`: returns smallest integer greater than or equal to a given<br>
+
+`console.log(Math.random());` // random number between 0 and 1
+
 ### String interpolation <br>
 let myPet = 'armadillo'; <br>
 console.log('I own a pet ' + myPet + '.');<br>
