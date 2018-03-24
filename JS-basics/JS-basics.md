@@ -83,3 +83,6 @@ console.log(`My name is ${myName}. My favorite city is ${myCity}.`); <br>
  - Mathematical assignment operators make it easy to calculate a new value and assign it to the same variable.
  - The + operator is used to interpolate (combine) multiple strings.
  - In JavaScript ES6, backticks (`) and ${} are used to interpolate values into a string.
+
+### Control flow
+**Control flow** statements enable JavaScript programs to make decisions by executing code based on a condition. If a given condition is true, we execute one block of code. If the statement is false, we execute another block of code.
