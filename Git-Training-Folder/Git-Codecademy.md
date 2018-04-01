@@ -4,6 +4,7 @@
 ```git status``` - check untracked changes and changes staged for a commit <br>
 ```git diff filename.txt``` - check changes between current file state and the state added to the staging area <br>
 ```git commit -m "Commit message"``` - commit the changes <br>
+`git commit --ammend -m "Updated commit message"` - change the commit message<br>
 ```git log``` - history of commits
 ```git show HEAD``` - shows the latest commit
 ```git checkout HEAD filename.txt``` - restores the file before the latest commit <br>
@@ -13,7 +14,7 @@
 ```git branch``` - which branch I am now? <br>
 ```git branch newbranch``` - create a new branch, can't contain whitespaces, but ```-``` and ```_``` can <br>
 ```git checkout branchname``` - switch to different branch <br>
-```git merge branchname``` - merge branchname into master <br>
+!```git merge branchname``` - merge branchname into master <br>
 
 Merge is successful if master hadn't changed since we commited on different branch. If it had changed, we have 2 different versions on separate branches, so when merged, there'll be a conflict. <br>
 
@@ -33,12 +34,13 @@ After merging BranchName into master we no longer need it. We can delete it with
 ```git remote -v``` - list Git's project remotes <br>
 ```git fetch``` - check if there were changes to the remote repo. This will not merge the changes from remote to local, it will bring changes to *remote branch* <br>
 ```git merge origin/master``` - this will merge remote's branch in sync with your local branch <br>
+`git pull` - download remote changes from the local and merge<br>
 
 #### Remote workflow: <br>
-  1. Fetch and merge changes from the remote
+  1. Fetch and merge changes from the remote // or git pull
   2. Create a branch to work on a new project feature
   3. Develop the feature on your branch and commit your work
-  4. Fetch and merge from the remote again (in case new commits were made while you were working)
+  4. Fetch and merge from the remote again (in case new commits were made while you were working) // or just git pull (this will download and merge)
   5. Push your branch up to the remote for review
 
 #### Generalizations again: <br>
