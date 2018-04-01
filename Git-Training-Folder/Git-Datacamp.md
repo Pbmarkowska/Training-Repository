@@ -62,9 +62,9 @@ Dot signalizes that you mean current directory and all the files in it. <br>
 ```git checkout -- .``` - brings all the files in the directory to the previous state
 
 ### Git branching
-```git diff branch_1..branch_2``` - will show difference between branches
-```git checkout -b branch_name``` - will create a new branch and switch to it
-```git merge source destination``` - merging 2 branches
+```git diff branch_1..branch_2``` - will show difference between branches <br>
+```git checkout -b branch_name``` - will create a new branch and switch to it <br>
+```git merge source destination``` - merging 2 branches <br>
 
 ### Create a repository
 ```git init repo_name``` - initialize an empty repository <br>
