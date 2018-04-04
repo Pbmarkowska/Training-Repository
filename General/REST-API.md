@@ -1,6 +1,3 @@
-### Methods
-
-
 ### API
 
 Application Programming Interface
@@ -31,3 +28,5 @@ Standard określający zasady projektowania API. W przypadku Web API opiera się
 4. **Cacheable**: API powinno wspierać cache'owanie danych w celu zwiększenia wydajności. Serwer może być obciążony dużą ilością zapytań pochodzących z API, dobrą praktyką jest przechowywanie informacji w pamięci podręcznej.  
 5. **Layered System**: System powinien być zaprojektowany w taki sposób aby klient wysyłający zapytanie mógł uzyskać odpowiedź bez konieczności posiadania wiedzy o tym, co się dzieje po stronie serwera.
 6. **Code on demand**: opcjonalna, przewiduje możliwość wysyłania fragmentów kodu (np.JS), który może być wykonany po stronie klienta.
+
+[Źródło - Overment Youtube - link](https://www.youtube.com/channel/UC_MIaHmSkt9JHNZfQ_gUmrg)
