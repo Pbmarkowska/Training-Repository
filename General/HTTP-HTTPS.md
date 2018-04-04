@@ -31,3 +31,5 @@ Rolą statusu jest informowanie o tym, czy dane żądanie zostało wykonane pomy
 3** - Redirection: Nastąpiło przekierowanie na innych adres <br>
 4** - Client Error: Oddany zasób nie istnieje lub jest niedostępny <br>
 5** - Server Error
+
+[Źródło - Overment Youtube - link](https://www.youtube.com/channel/UC_MIaHmSkt9JHNZfQ_gUmrg)
