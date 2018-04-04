@@ -79,7 +79,7 @@ Constraints that add information about how a column can be used are invoked afte
 
 ``DEFAULT`` columns take an additional argument that will be the assumed value for an inserted row if the new row does not specify a value for that column.
 
-### Generalizations
+##### Generalizations
 
 ``CREATE TABLE`` creates a new table. <br>
 ``INSERT INTO`` adds a new row to a table. <br>
@@ -88,7 +88,7 @@ Constraints that add information about how a column can be used are invoked afte
 ``ALTER TABLE`` changes an existing table. <br>
 ``DELETE FROM`` deletes rows from a table. <br>
 
-### Querying
+##### Querying
 
 ``AS`` is a keyword in SQL that allows you to rename a column or table using an alias. It is important to remember that the columns have not been renamed in the table. The aliases only appear in the result.
 
@@ -152,7 +152,7 @@ Example:<br>
  `END AS 'Mood'`<br>
 `FROM movies;`
 
-#### Generalizations
+##### Generalizations
 `SELECT` is the clause we use every time we want to query information from a database.<br>
 `AS` renames a column or table.<br>
 `DISTINCT` return unique values.<br>
@@ -163,7 +163,7 @@ Example:<br>
 `LIMIT` specifies the maximum number of rows that the query will return.<br>
 `CASE` creates different outputs.
 
-### Functions
+##### Functions
 `COUNT`: count the number of rows <br>
 `SUM`: the sum of the values in a column <br>
 `MAX/MIN`: the largest/smallest value <br>
@@ -181,3 +181,27 @@ Example:<br>
 `GROUP BY` is a clause in SQL that is used with aggregate functions. It is used in collaboration with the `SELECT` statement to arrange identical data into groups.
 
 The `GROUP BY` statement comes after any `WHERE` statements, but before `ORDER BY` or `LIMIT`.
+
+
+When we want to limit the results of a query based on values of the individual rows, use `WHERE`.
+
+When we want to limit the results of a query based on an aggregate property, use `HAVING`.
+
+`HAVING` statement always comes after `GROUP BY`, but before `ORDER BY` and `LIMIT`.
+
+
+##### Generalizations
+
+`COUNT`: count the number of rows <br>
+`SUM`: the sum of the values in a column <br>
+`MAX/MIN`: the largest/smallest value <br>
+`AVG`: the average of the values in a column <br>
+`ROUND`: round the values in the column
+
+Aggregate functions combine multiple rows together to form a single value of more meaningful information.
+
+`GROUP BY` is a clause used with aggregate functions to combine data from one or more columns.<br>
+`HAVING` limit the results of a query based on an aggregate property.
+
+
+### Joining tables
