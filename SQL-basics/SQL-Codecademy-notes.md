@@ -205,3 +205,20 @@ Aggregate functions combine multiple rows together to form a single value of mor
 
 
 ### Joining tables
+
+JOIN - *INNER JOIN*
+
+SELECT COUNT (*) <br>
+FROM newspaper; <br>
+
+SELECT COUNT (*) <br>
+FROM online; <br>
+
+SELECT COUNT (*) <br>
+FROM newspaper <br>
+JOIN online ON newspaper.id = online.id;
+
+
+LEFT JOIN
+
+A left join will keep all rows from the first table, regardless of whether there is a matching row in the second table.
