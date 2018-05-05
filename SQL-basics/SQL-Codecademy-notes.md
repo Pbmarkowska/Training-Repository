@@ -221,4 +221,55 @@ JOIN online ON newspaper.id = online.id;
 
 LEFT JOIN
 
-A left join will keep all rows from the first table, regardless of whether there is a matching row in the second table.
+  A left join will keep all rows from the first table, regardless of whether there is a matching row in the second table.
+
+
+### Primary Keys vs Foreign Keys
+
+**Primary Keys**:
+* none of the values can be NULL
+* each value must be unique
+* a table cannot have more than one primary key column
+* generally the primary key will be called **id**
+
+When a primary key appears in a different table it's called **foreign key**.
+
+### Cross Join
+Cross joins don't require an `ON` statement. We're not really joining any columns.
+
+`SELECT shirts.shirt_color,` <br>
+       `pants.pant_color` <br>
+`FROM shirts` <br>
+`CROSS JOIN pants;` <br>
+
+#### Union
+Sometimes we want to stack one dataset on top of the other. `UNION` lets us do that. Merging two tables.
+
+SQL has strict rules for appending data:
+* Tables must have the same # of columns.
+* The columns must have the same data types in the same order as the first table.
+
+
+`SELECT *` <br>
+`FROM table1` <br>
+`UNION` <br>
+`SELECT *` <br>
+`FROM table2;` <br>
+
+Often times, we want to combine two tables, but one of the tables is the result of another calculation
+
+#### Generalizations
+
+`JOIN` will combine rows from different tables if the join condition is true.
+
+`LEFT JOIN` will return every row in the left table, and if the join condition is not met, NULL values are used to fill in the columns from the right table.
+
+**Primary key** is a column that serves a unique identifier for the rows in the table.
+
+**Foreign key** is a column that contains the primary key to another table.
+
+`CROSS JOIN` lets us combine all rows of one table with all rows of another table.
+
+`UNION` stacks one dataset on top of another.
+
+`WITH` allows us to define a bunch of temporary tables that can be used in the final query.
