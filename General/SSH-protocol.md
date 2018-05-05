@@ -10,6 +10,6 @@ Protokół SSH umożliwia przeprowadzenie procesu uwierzytelnienia za pomocą ze
 
 Generowanie kluczy:
 
-`ssh-keygen -t rsa-C "pb.markowska@gmail.com"`
+`ssh-keygen -t rsa -C "pb.markowska@gmail.com"`
 
-Domyślnie zestaw kluczy zostanie zapisany w katalogu domowym w pliku. 
+Domyślnie zestaw kluczy zostanie zapisany w katalogu domowym w pliku.
