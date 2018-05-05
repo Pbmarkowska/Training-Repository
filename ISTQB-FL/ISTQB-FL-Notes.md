@@ -376,8 +376,9 @@ Cechy wspólne technik projektowania testów opartych na doświadczeniu
 * do tworzenia przypadków testowych wykorzystywne jest doświadczenie ludzi
 
 #### Techniki oparte na specyfikacji lub czarnoskrzynkowe
-<br>
-**Techniki czarnoskrzynkowe:**
+
+
+**Techniki czarnoskrzynkowe:** <br>
 * podział na klasy równoważności
 * analiza wartości brzegowych
 * testowanie w oparciu o tablicę decyzyjną
