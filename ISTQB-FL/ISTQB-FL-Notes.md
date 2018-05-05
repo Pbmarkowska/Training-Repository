@@ -118,7 +118,7 @@ Model V (sekwencyjny): MISA
 Modele iteracyjno-przyrostowe <br>
 Iteracyjno-przyrosotwe wytwarzanie oprogramowania to proces zbierania wymagań projektowania, budowania oraz testowania systemu zorganizowany w krótsze cykle rozwojowe np. prototypowanie, RAD, RUP oraz metodyki zwinne.
 
-**Testowanie regresywne jest bardzo ważne w każdej iteracji oprócz pierwszej. Każdy przyrost może podlegać zarówno weryfikacji, jak i walidacji. **
+**Testowanie regresywne jest bardzo ważne w każdej iteracji oprócz pierwszej. Każdy przyrost może podlegać zarówno weryfikacji, jak i walidacji.**
 
 #### Testowanie w cyklu życia oprogramowania
 W każdy modelu rozwoju oprogramowania dobre testowanie posiada kilka niezmiennych cech:
@@ -236,13 +236,13 @@ Testy niefunkcjonalne zajmują się zewnętrznym zachowaniem oprogramowania i w 
 
 Testy strukturalne (białoskrzynkowe) można wykonywać na każdym poziomie testowania.
 
-**Pokrycie** to stopień, w  jakim struktura została przetstowana przez zestaw testów wyrażony jako odsetek pokrytych elementów. **Pokrycie mozna mierzyć za pomocą narzędzi. **
+**Pokrycie** to stopień, w  jakim struktura została przetstowana przez zestaw testów wyrażony jako odsetek pokrytych elementów. **Pokrycie mozna mierzyć za pomocą narzędzi.  **
 
 #### Testowanie związane ze zmianami: testowanie potwierdzające oraz regresywne
 
 Testy, które mają być stosowane w testowaniu potwierdzającym i regresywnym muszą być powtarzalne.
 
-<br>
+
 **TESTY POTWIERDZAJĄCE (RETESTY)** - Po wykryciu i naprawieniu defektu, powinien zostać wykonany retest, żeby potwierdzić usunięcie usterki.
 
 **TESTY REGRESYWNE** to powtórzenie testow na już przetestowanym programie wykonywane po modyfikacjach, żeby wykryć nowe usterki lub usterki odsłonięte na skutek wykonanych zmian. Testy regresywne wykonuje się po zmianach w oprogramowaniu. Są dobrymi kandydatami do automatyzacji.
@@ -468,7 +468,7 @@ Kryteria wejścia zwykle mogą zawierać następujące zagadnienia:
 
 #### Ryzyko a testowanie
 
-** Obszary ryzyka projektowego**
+**Obszary ryzyka projektowego**
 * czynniki organizacyjne:
   * braki w umiejętnościach, szkoleniach lub personelu
   * problemy kadrowe
