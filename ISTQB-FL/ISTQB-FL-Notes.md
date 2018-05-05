@@ -37,7 +37,7 @@ Cele testowania:
 * dostarczanie informacji potrzebnych do podejmowania decyzji
 * zapobieganie defektom
 
-**Debagowanie** to czynność programistyczna, która znajduje, anazliuje i umożliwia usunięcie przyczyny awarii. Późniejsze testy potwierdzające (retesty) wykonywane przez testera gwarantują, że poprawka rzeczywiście usunęła usterkę.
+**Debagowanie** to czynność programistyczna, która znajduje, analizuje i umożliwia usunięcie przyczyny awarii. Późniejsze testy potwierdzające (retesty) wykonywane przez testera gwarantują, że poprawka rzeczywiście usunęła usterkę.
 
 **Testerzy testują, a programiści debagują**
 
@@ -59,7 +59,7 @@ Podstawowy proces testowy składa się z następujących części:
 polega na zdefiniowaniu celów testowania i określeniu czynności testowych potrzebnych do wypełnienia misji i celów testowania
 * **analiza i projektowanie testów**
 
-ogólne cele testowania przekształcane są w konkretne warunki testowe i przypadki testowanego
+ogólne cele testowania przekształcane są w konkretne warunki testowe i przypadki testowe
 
 Główne zadania analizy i projektowania testów:
 
@@ -73,7 +73,7 @@ Główne zadania analizy i projektowania testów:
 * **tworzenie dwukierunkowego śledzenia pomiędzy podstawą testów oraz przypadkami testowymi**
 
 * **implementacja i wykonanie testów**
-to czynność, podczas której specyfikowane są procedury i skrypty testowe przez ustawienie przypadków testowych w konkretnej kolejności oraz dolączenie innych informacji potrzebnych do wykonania tstów, konfigurowane jest środowisko testowe oraz są wykonywane testy.
+to czynność, podczas której specyfikowane są procedury i skrypty testowe przez ustawienie przypadków testowych w konkretnej kolejności oraz dołączenie innych informacji potrzebnych do wykonania testów, konfigurowane jest środowisko testowe oraz są wykonywane testy.
 
 Główne zadania implementacji i wykonania testów:
 * dokończenie, implementacja i priorytetyzacja przypadków testowych
@@ -92,7 +92,7 @@ Główne zadania implementacji i wykonania testów:
 
 Główne zadania oceny spełnienia kryteriów zakończenia:
 * sprawdzenie w logach testów czy zostały spełnione kryteria zakończenia testów określone podczas planowania
-* oceninie, czy potrzeba więcej testów lub czy nie powinny zostać zmienione kryteria zakończenia
+* ocenienie, czy potrzeba więcej testów lub czy nie powinny zostać zmienione kryteria zakończenia
 * napisanie raportu podsumowującego testy dla interesariuszy
 
 * **czynności zamykąjące test**
@@ -115,7 +115,7 @@ Model V (sekwencyjny): MISA
 * testy systemowe
 * testy akceptacyjne
 
-Modele iteracyjno-przyrostowe
+Modele iteracyjno-przyrostowe <br>
 Iteracyjno-przyrosotwe wytwarzanie oprogramowania to proces zbierania wymagań projektowania, budowania oraz testowania systemu zorganizowany w krótsze cykle rozwojowe np. prototypowanie, RAD, RUP oraz metodyki zwinne.
 
 **Testowanie regresywne jest bardzo ważne w każdej iteracji oprócz pierwszej. Każdy przyrost może podlegać zarówno weryfikacji, jak i walidacji. **
@@ -130,11 +130,11 @@ W każdy modelu rozwoju oprogramowania dobre testowanie posiada kilka niezmienny
 ### 2.2 Poziomy testów
 
 #### Testy modułowe
-Polegają na wyszukiwaniu błędów i weryfikacji funkcjonalności oprogramowania, które można **testować oddzielnie**. Można podczas nich użyć zaślepek, sterowników testowych oraz symulatorów.
+Polegają na wyszukiwaniu błędów i weryfikacji funkcjonalności oprogramowania, które można **testować oddzielnie**. Można podczas nich użyć **zaślepek, sterowników testowych oraz symulatorów.**
 
 Testy modułowe mogą zawierać testy funkcjonalności oraz niektórych atrybutów niefunkcjonalnych, takich jak stopień wykorzystania zasobów (np. wycieków pamięci) lub odporności, jak również testy strukturalne (np. pokrycia decyzji).
 
-Testy modułowe zwykle wykonuje się mając dostęp do kodu źródłowego i przy wsparciu środowiska rozwojowego, zwykle angażują prgramistę. Usterki są usuwane jak tylko zostaną wykryte.
+Testy modułowe zwykle wykonuje się mając dostęp do kodu źródłowego i przy wsparciu środowiska rozwojowego, zwykle angażują programistę. Usterki są usuwane jak tylko zostaną wykryte.
 
 Podejście 'Najpierw testuj' (TDD - Test Driven Development - Wytwarzanie sterowane testowaniem) - jednym z podejść do testów modułowych jest przygotowanie i zautomatyzowanie przypadków testowych przed kodowaniem.  
 
@@ -161,3 +161,326 @@ Typowe obiekty testów:
 * infrastruktura
 * interfejsy
 * konfiguracja systemu i dane konfiguracyjne
+
+Na każdym etapie integracji testerzy koncentrują się wylącznei na samej integracji (a nie na funkcjonalności).
+
+Systematyczne strategie integracji mogą bazować na architekturze systemu (np. strategie wstępująca i zstępująca), zadaniach funkcjonalnych, sekwencjach przetwarznia transakcji albo na innym aspekcie systemu lub modułu.
+
+#### Testy systemowe
+
+Testy systemowe zajmują się zachowaniem systemu/produktu. Środowisko testowe, podczas testów systemowych, powinno być zgodne ze środowiskiem docelowym/produkcyjnym w jak najwyższym możliwym stopniu, żeby zminimalizować ryzyko wystąpienia awarii spowodowanych przez środowisko.
+
+Testy systemowe powinny sprawdzać funkcjonalne, jak i niefunkcjonalne **wymagania** na system oraz jakość danych.
+
+Testy systemowe są często wykonywane przez niezależny zespół testowy.
+
+Typowe obiekty testów:
+* podręczniki systemowe, użytkownika i operacyjne
+* konfiguracja systemu i dane konfiguracyjne
+
+#### Testy akceptacyjne
+
+Odpowiedzialnóść za testy akceptacyjne leży często po stronie klientów lub użytkowników systemu.
+
+Celem testów akceptacyjnych jest nabranie zaufania do systemu (nie szukam bugów, tylko potwierdzam, że działa)
+
+Typowe formy testów akceptacyjnych:
+* testowanie akceptacyjne użytkownika (sprawdza przydatkość systemu dla użytkowników)
+* akceptacja systemu przez administratorów
+* testy akceptacyjne zgodności z umową i testy zgodności legislacynej
+* testy alfa i beta
+
+Testy alfa - są wykonywane u producenta, a nie przez zespół projektowy.
+
+Testy beta - są wykonywane przez klientów lub potencjalnych klientów w ich własnych lokalizacjach.
+
+## 2.3 Typy testów
+
+Cele testów:
+* przetestowanie jakiejś funkcji wykonywanej przez oprogramowaniem - **TESTY FUNKCJONALNE**
+* przetestowanie jakiegoś niefunkcjonalnego atrybutu jakościowego (takiego jak niezawodność lub użyteczność) - **TESTY NIEFUNKCJONALNE**
+* przetestowanie struktury lub architektury systemu - **TESTY STRUKTURALNE**
+* testy związane ze zmianami, to jest **potwierdzeniem, że usterki zostały naprawione (testy potwierdzające == retesty) i szukaniem niezamierzonych zmian (testowanie regresywne)** - **RETESTY LUB TESTOWANIE REGRESYWNE**
+
+#### Testowanie funkcjonalne (testowanie funkcji)
+
+Funkcje są tym, "co" system robi.
+
+Testy funkcjonalne zajmują się zewnętrznym zachowaniem oprogramowania (testy czarnoskrzynkowe).
+
+Testy funkcjonalne można wykonywać na wszystkich poziomach.
+
+**Typy testów funkcjonalnych:**
+* testowanie zabezpieczeń
+* testowanie współdziałania (ocenia zdolność oprogramowania do współpracy z jednym lub większą liczbą wskazanych modułów lub systemów)
+
+
+#### Testowanie niefunkcjonalne (testowanie atrybutów niefunkcjonalnych)
+
+Testowanie niefunkcjonalne polega na sprawdzeniu "jak" system działa.
+
+Testy niefunkcjonalne mogą być wykonywane na wszystkich poziomach testów.
+
+Testy niefunkcjonalne zajmują się zewnętrznym zachowaniem oprogramowania i w większości wypadków wykorzystują techniki czarnoskrzynkowe.
+
+**Typy testów niefunkcjonalnych:**
+* testowanie wydajnościowe
+* testowanie obciążeniowe
+* testowanie przeciążeniowe
+* testowanie użyteczności
+* testowanie pielęgnowalności
+* testowanie niezawodności
+* testowanie przenaszalności (RWD)
+
+#### Testowanie strukturalne (testowanie struktury/architektury systemu)
+
+Testy strukturalne (białoskrzynkowe) można wykonywać na każdym poziomie testowania.
+
+**Pokrycie** to stopień, w  jakim struktura została przetstowana przez zestaw testów wyrażony jako odsetek pokrytych elementów. **Pokrycie mozna mierzyć za pomocą narzędzi. **
+
+#### Testowanie związane ze zmianami: testowanie potwierdzające oraz regresywne
+
+Testy, które mają być stosowane w testowaniu potwierdzającym i regresywnym muszą być powtarzalne.
+
+<br>
+**TESTY POTWIERDZAJĄCE (RETESTY)** - Po wykryciu i naprawieniu defektu, powinien zostać wykonany retest, żeby potwierdzić usunięcie usterki.
+
+**TESTY REGRESYWNE** to powtórzenie testow na już przetestowanym programie wykonywane po modyfikacjach, żeby wykryć nowe usterki lub usterki odsłonięte na skutek wykonanych zmian. Testy regresywne wykonuje się po zmianach w oprogramowaniu. Są dobrymi kandydatami do automatyzacji.
+
+Testy regresywne można wykonywać na wszystkich poziomach testów i dla wszystkich typów testów: funkcjonalnych, niefunkcjonalnych i strukturalnych.
+
+#### Testowanie pielęgnacyjne
+
+Testowanie pielęgnacyjne wykonuje się na działającym systemie na skutek modyfikacji, migracji lub złomowania oprogramowania lub systemu.
+
+Modyfikacjami mogą być:
+* planowane ulepszenia
+* poprawki lub naprawy awaryjne
+* zmiany środowiska (planowanie podniesienie wersji systemu operacyjnego, bazy danych lub oprogramowania z półki albo łaty zabezpieczeń systemu operacyjnego)
+
+
+**Analiza wpływu** - określenie jaki wpływ na istniejący system mogą mieć zmiany, nazywamy analizą wpływu. Stosuje się ja, aby ustalić zakres testów regresywnych. Analiza wpływu może zostać użyta do wybrania zestawu testów regresyjnych.
+
+### Statyczne techniki testowania
+
+**Typy technik testowania**
+1. Przeglądy
+2. Analiza statyczna
+3. Testy dynamiczne
+
+**Techniki statyczne** polegają na sprawdzeniu ręcznym (przeglądy) lub analizie automatycznej (analiza statyczna) kodu lub innych dokumentów projektowych bez uruchamiania kodu. Wykrywają usterki, nie awarie.
+
+#### Przeglądy
+
+**Przeglądy**: mogą im podlegać wszystkie produkty procesu wytwarzania oprogramowania: specyfikacja wymagań, projekt, kod, plany testów, specyfikacja testów, przypadki testowe, skrypty testowe, podręcznik użytkownika oraz strony webowe.
+
+**Główne korzyści z wykonywania przeglądów**:
+* wczesne wykrycie i naprawa usterek
+* zwiększenie produktywności produkcji oprogramowania
+* redukcja czasu produkcji oprogramowania
+* zmniejszenie kosztów i czasu testowania
+* ogólne zmniejszenie kosztu wytwarzania i użytkowania oprogramowania
+* zmniejszenie liczby usterek
+* usprawnienie komunikacji
+
+**Typowe usterki, które łatwo wykryć w testach statycznych:**
+* odchylenia od standardów
+* usterki w wymaganiach
+* usterki w projekcie
+* niedostateczna pielęgnowalność
+* nieprawidłowe specyfikacje interfejsów
+
+
+**Kroki przeglądu formalnego**
+  1. planowanie
+  2. rozpoczęcie
+  3. przygotowanie indywidualne
+  4. kontrola/ocena/zapisanie wyników (spotkanie przeglądowe)
+  5. poprawki
+  6. zakończenie
+
+
+  **Role uczestników przeglądów**
+  * Kierownik
+  * Moderator
+  * Autor
+  * Przeglądajacy
+  * Protokólant
+
+
+  **Typy przeglądów**
+* Przegląd nieformalny
+* Przejrzenie
+* Przegląd techniczny
+* Inspekcja
+
+#### Analiza statyczna przy pomocy narzędzi
+
+Cel analizy statycznej: wykrycie usterek w kodzie programu lub w modelach bez uruchamiania oprogramowania.
+
+**Analiza statyczna zwykle wykrywa następujące typy usterek:**
+* odwołanie do niezainicjalizowanej zmiennej
+* niespójne interfejsy między modułami
+* niewykorzystane lub niepoprawnie zadeklarowane zmiennej
+* martwy kod
+* brakująca albo błędna logka (pętle potencjalnie nieskończone)
+* zbyt skomplikowane konstrukcje
+* naruszenie standardów kodowania
+* słabe punkty zabezpieczeń
+* naruszenie reguł składni kodu i modeli programowania
+
+### Proces rozwoju testów
+
+
+1. **Analiza testów**: przegląd dokumentacji podstawy testów
+2. **Wybór technik projektowania testów**
+3. **Projektowanie testów**: tworzenie i opisanie przypadków testowych i danych testowych.
+4. **Stworzenie procedór testowych**: priorytetyzacja wykonania przypadków testowych
+5. **Stworzenie harmonogramu testowego**: porządek wykonania procedur testowych
+
+**Podczas analizy testów**, przeglądana jest dokumentacja podstawy testów w celu określenia co należy przetestować, czyli warunków testowych.
+
+Aby wybrać techniki projektowania testów, które zostaną użyte, podczas analizy stosowane jest szczegółowe podejście do testów oparte między innymi na analizie ryzyka.
+
+**Podczas projektowania testów** tworzy się i opisuje przypadki testowe i dane testowe.
+
+**Przypadek testowy** składa się ze:
+* zbioru wartości wejściowych
+* warunków wstępnych
+* oczekiwanych wyników (od strony klienta), powinnym być zdefiniowane przed wykonaniem testów
+* warunków zakończenia (od strony systemu) utworzonych, aby pokryć pewne cele twstów lub warunki testowe
+
+**Procedura testowa** zawiera kolejność działań podczas wykonania testu. Jest to poukładany, spriorytetyzowany zbiór przypadków testowych.
+
+Procedury testowe i automatyczne skrypty testowe są następnie układane w **harmonogram wykonania testów**.
+
+
+### Kategorie technik projektowania testów
+
+**Klasyczny podział**:
+1. **Techniki czarnoskrzynkowe** (oparte na specyfikacji). Z definicji nie wykorzystują żadnych informacji o strukturze wewnętrznej testowanego modułu lub systemu.
+2. **Techniki białoskrzynkowe** (strukturalne, oparte na strukturze)
+3. Techniki operate na doświadczeniu
+
+
+Cechy wspólne technik projektowania testów opartych na specyfikacji:
+* w specyfikacji problemu do rozwiązania, oprogramowania lub jego komponentów używane są modele
+* z tych modelu można, w sposób usystematyzowany, wywodzić przypadki testowe
+
+Cechy wspólne technik projektowania testów opartych na strukturze:
+* do tworzenia przypadków testowych, wykorzystywana jest wiedza o tym jak oprogramowanie jest skonstruowane, np. kod źródłowy
+* można mierzyć stopień pokrycia istniejących przypadków testowych, można w sposób usystematyzowany
+ tworzyć nowe przypadki testowe w celu zwiększenia pokrycia
+
+Cechy wspólne technik projektowania testów opartych na doświadczeniu
+* do tworzenia przypadków testowych wykorzystywne jest doświadczenie ludzi
+
+#### Techniki oparte na specyfikacji lub czarnoskrzynkowe
+<br>
+**Techniki czarnoskrzynkowe:**
+* podział na klasy równoważności
+* analiza wartości brzegowych
+* testowanie w oparciu o tablicę decyzyjną
+* testowanie przejść pomiędzy stanami
+* testowanie w oparciu o przypadki użycia
+
+**Podział na klasy równoważności** <br>
+W technice podziału na klasy równoważności wejścia do programu lub systemu są dzielone na grupy, które powodują podobne zachowanie oprograowania. Klasy równoważności można znaleźć dla **danych poprawnych** (wartości, które powinny zostać zaakceptowane) oraz **niepoprawnych** (wartości, które powinny zostać odrzucone). Klasy równoważności można znaleźć również dla **wyjść, wartości wewnętrznych, wartości zależnych od czasu oraz parametrów interfejsów.**
+
+**Minimum i maksimum klasy równoważności to jej wartości brzegowe**
+
+Wartość brzegowa to wartość znajdująca się wewnątrz, pomiędzy lub tuż przy granicy danej klasy równoważnośc
+
+Przykład:
+    - rejestracja dziecka w przedziale wiekowym 0 – 18:
+testowane wartości brzegowe: {-1, 0, 1, 17, 18, 19}
+
+**Testowanie w oparciu o tablicę decyzyjną** <br>
+Tablice decyyzyjne są dobrym sposobem na uchwycenie wymagań na system, które zawierają zależności logiczne, oraz na udokumentowanie wewnętrznej budowy systemu. Mogą być używane do zapisywanie złożonych reguł biznesowych.
+
+Warunki wejściowe oraz zachowanie systemu często muszą być zapisane jako prawda lub fałsz (boolean).
+
+**Testowanie przejść między stanami**
+
+Tabela stanów pokazuje zależności pomiędzy stanami oraz wejściami i może uwypuklić przejscia nieprawidłowe.
+
+Przejścia 0-przełącznikowe (bez pośrednich stanów) <br>
+Przejścia 1-przełącznikowe (1 pośredni stan)
+
+Testowanie przejść między stanami jest często używane w testowaniu oprogramowania wbudowanego oraz ogólnie w automatyce.
+
+**Testowanie w oparciu o przypadki użycia**
+
+Testy można zaprojektować na podstawie przypadków użycia.
+
+ **Przypadek użycia** opisuje interakcje pomiędzy aktorami (użytkownikami lub systemami), które powodują powstanie wyniku wartościowego z punktu widzenia użytkownika lub klienta.
+
+Przypadki użycia zwykle posiadają **scenariusz główny** (tj. najbardziej prawdopodobny) oraz czasami **scenariusze poboczne**.
+
+Każdy przypadek użycia zaczyna się warunkami wstępnymi i kończy warunkami końcowymi.
+
+#### Techniki oparte na strukturze lub białoskrzynkowe
+
+Testowanie oparte na strukturze (białoskrzybkowe) bazuje na rozpoznanej strukturze oprogramowania lub systemu.
+
+Strukturą może być:
+* w testach modułowych jest to kod, jego instrukcje, decyzje, rozgałęzienia lub nawet rozróżnialne ścieżki
+* w testach integracyjnych strukturą może być hierarchia wywołań (diagram, który pokazuje jak moduły wywołują inne moduły)
+* w testach systemowych strukturą może być budowa menu, proces biznesowyy lub struktura strony webowej
+
+
+3 strukturalne techniki projektowania testów związane z pokryciem kodu, bazujące na instrukcjach, decyzjach i rozgałęzieniach:
+1. Testowanie i pokrycie instrukcji
+2. Testowanie i pokrycie decyzji
+
+Pokrycie decyzji:
+liczba wyników decyzji pokrytych/zaprojektowane lub wykonane przypadki testowe/liczba wszystkich wyników decyzji, znajdujących się w testowanym kodzie
+
+Testowanie decyzji jest jedną z form testowania przepływu sterowania, ponieważ podąża za konkretnym przepłuywem sterowania przez punkty decyzyjne.
+
+100% pokrycia decyzji gwarantuje 100% pokrycia instrukcji, ale nie na odwrót.
+
+3. Inne techniki oparte na strukturze: pokrycie warunków lub wielokrotne pokrycie warunków
+
+
+### 5.1 Organizacja testów
+
+**Plusy i minusy niezależnego testowania** <br>
+Plusy: brak uprzedzeń, widzą inne usterki <br>
+
+Minusy: izolacja od deweloperów, mogą być postrzegani jako wąskie gardło
+
+Tester a lider (kierownik testów)
+
+#### 5.2 Planowanie i szacowanie testów
+
+**Czynności związane z planowaniem testów**:
+
+**Kryteria wejścia**
+
+Kryteria wejścia definiują warunki pozwalające na rozpoczęcie testów na początku poziomu testów lub, gdy zbiór testów jest gotowy do wykonania.
+
+Kryteria wejścia zwykle mogą zawierać następujące zagadnienia:
+* dostępność i gotowość środowiska testowego
+* gotowość narzędzi testowych w środowisku testowym
+* dostępność testowalnego kodu
+* dostępność danych testowych
+
+#### Ryzyko a testowanie
+
+** Obszary ryzyka projektowego**
+* czynniki organizacyjne:
+  * braki w umiejętnościach, szkoleniach lub personelu
+  * problemy kadrowe
+  * problemy polityczne: problemy z testerami komunikującymi swoje potrzeby oraz wyniki testów
+  * brak reakcji zespołu w związku z informacjami pozyskanymi podczas testów i przeglądów
+  * nieprawidłowe nastawienie i oczekiwanie od testowania
+* problemy techniczne
+  * problemy ze zdefiniowaniem poprawnych wymagań
+  * stopień, w jakim wymagania mogą zostać spełnione przy istniejących ograniczeniach
+  * środowisko testowe niegotowe na czas
+  * spóźniona konwersja danych, planowanie migracji oraz rozwój i testowanie narzędzi do migracji i konwersji danych
+  * niska jakość projektu, kodu, danych konfiguracyjnych, danych testowych i testów
+* problemy z dostawcami
+  * niewywiązywanie się dostawców ze zobowiązań
+  * problemy z kontraktami
