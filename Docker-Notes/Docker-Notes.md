@@ -1,19 +1,21 @@
 [Source: Medium](https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b)
 
-Used for packing, shipping and running applications within containters.
+Docker is used for packing, shipping and running applications within containters.
 
 ### VM vs Docker
 VM (Virtual Machine) - emulation of a real computer that executes programs like a real computer.
 
-VM run on top of a physical machine using 'hypervisor'. 'Hypervisor' is a piece of software, firmware, or hardware that VMs run on top of.
+![VM Structure](https://cdn-images-1.medium.com/max/800/1*RKPXdVaqHRzmQ5RPBH_d-g.png "VM Structure")
+
+VM run on top of a physical mųachine using 'hypervisor'. 'Hypervisor' is a piece of software, firmware, or hardware that VMs run on top of.
 
 A hypervisor, in turn, runs on either a 'host machine' or on 'bare-metal'.
 
 Host machine provides the VMs with resources, including RAM and CPU.
 
-A VM that is running on the host machine (again, using hypervisor) is also often called a 'guest machine'. 'Guest machine' can run on either a hosted hypervisor or a bare-metal hyperviso
+A VM that is running on the host machine (again, using hypervisor) is also often called a 'guest machine'. 'Guest machine' can run on either a hosted hypervisor or a bare-metal hypervisor.
 
-This 'guest machine' contains both the application and whateer it needs to run that application (e.g. system binaries and libraries). It also carries an entire virtualized hardware stack of its own, including virtualized network adapters, storage, and CPU - which means it also has its own full-fledged guest operating system.
+This 'guest machine' contains both the application and whatever it needs to run that application (e.g. system binaries and libraries). It also carries an entire virtualized hardware stack of its own, including virtualized network adapters, storage, and CPU - which means it also has its own full-fledged guest operating system.
 
 Differences between hosted hypervisor and bare-metal hypervisor:
 
@@ -37,4 +39,8 @@ Differences between hosted hypervisor and bare-metal hypervisor:
  - they have a private interface and IP address
  - they allow custom routes and iptable rules
  - they can mount file systems etc.
- - The one big difference between containers and VMs is that containers share the host system's kernel with other containers.
+ - **The one big difference between containers and VMs is that containers share the host system's kernel with other containers.**
+
+ #### Containers
+
+ ![Container Structure](https://cdn-images-1.medium.com/max/800/1*V5N9gJdnToIrgAgVJTtl_w.png "Container Structure")
